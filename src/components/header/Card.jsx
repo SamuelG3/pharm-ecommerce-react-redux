@@ -10,7 +10,6 @@ export const Card = () => {
     setCardOpen(null);
   };
 
-
   return (
     <>
       <div className="card" onClick={() => setCardOpen(!cardOpen)}>
@@ -21,7 +20,7 @@ export const Card = () => {
 
       <div className={cardOpen ? "cartItem" : "cardhide"}>
         <div className="title flex">
-          <h2>Shopping Cart</h2>
+          <h2>Carrinho</h2>
           <button onClick={closeCard}>
             <AiOutlineClose className="icon" />
           </button>
