@@ -6,88 +6,84 @@ export const slide = [
   { image: "../images/slide/slide3.png" },
   { image: "../images/slide/slide4.png" },
 ];
+
 export const order = [
   {
     id: 1,
-    title: "Your Order",
+    title: "Faça Seu Pedido",
     desc: "There are many variations of passages of Lorem Ipsum available",
   },
   {
     id: 2,
-    title: "Ready Your Order",
+    title: "Preparamos seu Pedido",
     desc: "There are many variations of passages of Lorem Ipsum available",
   },
   {
     id: 3,
-    title: "Packing Your Order",
+    title: "Enviamos",
     desc: "There are many variations of passages of Lorem Ipsum available",
   },
   {
     id: 4,
-    title: "And Deliver",
+    title: "E Entregamos",
     desc: "There are many variations of passages of Lorem Ipsum available",
   },
 ];
 export const category = [
   {
     id: 1,
-    title: "face & skin care",
-    cover: "../images/category/ca1.png",
+    title: "skin care",
+    image: "../images/category/ca1.png",
   },
   {
     id: 2,
     title: "baby care",
-    cover: "../images/category/ca2.png",
+    image: "../images/category/ca2.png",
   },
   {
     id: 3,
     title: "beauty care",
-    cover: "../images/category/ca3.png",
+    image: "../images/category/ca3.png",
   },
   {
     id: 4,
-    title: "contraceptive",
-    cover: "../images/category/ca4.png",
+    title: "higiene",
+    image: "../images/category/ca5.png",
   },
   {
     id: 5,
-    title: "feminine hygiene",
-    cover: "../images/category/ca5.png",
+    title: "suplementos",
+    image: "../images/category/ca6.png",
   },
   {
     id: 6,
-    title: "health & protein",
-    cover: "../images/category/ca6.png",
+    title: "bem-estar",
+    image: "../images/category/ca7.png",
   },
   {
     id: 7,
-    title: "health & wellness",
-    cover: "../images/category/ca7.png",
+    title: "medicina",
+    image: "../images/category/ca8.png",
   },
   {
     id: 8,
-    title: "medicine & first aid",
-    cover: "../images/category/ca8.png",
+    title: "oral care",
+    image: "../images/category/ca9.png",
   },
   {
     id: 9,
-    title: "oral care",
-    cover: "../images/category/ca9.png",
+    title: "maternidade",
+    image: "../images/category/ca10.png",
   },
   {
     id: 10,
-    title: "pregnacy",
-    cover: "../images/category/ca10.png",
+    title: "bem-estar sexual",
+    image: "../images/category/ca11.png",
   },
   {
     id: 11,
-    title: "sexual well-being",
-    cover: "../images/category/ca11.png",
-  },
-  {
-    id: 12,
-    title: "Household",
-    cover: "../images/category/ca12.jpg",
+    title: "para casa",
+    image: "../images/category/ca12.png",
   },
 ];
 export const product = [

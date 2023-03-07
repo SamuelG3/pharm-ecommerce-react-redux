@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import Hospital from "../../assets/images/hospital.png";
 import { AiOutlineSearch } from "react-icons/ai";
 import { Card } from "./Card";
 import { User } from "./User";
@@ -16,7 +17,8 @@ export const Header = () => {
       <header className="header">
         <div className="scontainer flex">
           <div className="logo">
-            <h1>Farm-Aid</h1>
+            <img src={Hospital} alt="" />
+            <h1>pharm-aid</h1>
           </div>
           <div className="search flex">
             <AiOutlineSearch className="searchIcon" />

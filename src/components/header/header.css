@@ -5,6 +5,24 @@ header {
   position: relative;
   z-index: 44;
 }
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  margin-right: 5px;
+}
+.logo h1 {
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(
+    24deg,
+    rgba(218, 44, 67, 1) 0%,
+    rgba(233, 126, 136, 1) 66%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .search {
   border: 2px solid #212121;
   border-radius: 6px;

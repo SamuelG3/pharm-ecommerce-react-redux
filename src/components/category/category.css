@@ -13,6 +13,7 @@
 }
 .category img {
   margin: auto;
+  height: 120px;
 }
 .category .box {
   margin: 5px;
