@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 import Newsletter from "./components/footer/Newsletter";
@@ -7,22 +8,23 @@ import { Home } from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import Register from "./pages/login/Register";
 
-function App() {
+const App = () => {
+  const cartItems = useSelector((state) => state.cart.itemsList);
+  console.log(cartItems);
   return (
     <>
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/account" element={<Account />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/account" element={<Account />} />
         </Routes>
         <Newsletter />
         <Footer />
       </Router>
     </>
   );
-}
-
+};
 export default App;

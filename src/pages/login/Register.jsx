@@ -23,9 +23,9 @@ export default function Register() {
           <span>Nome de Usuário*</span>
           <input type="text" required />
           <span>Senha*</span>
-          <input type="text" required />
+          <input type="password" required />
           <span>Confirme Sua Senha*</span>
-          <input type="text" required />
+          <input type="password" required />
           <button className="button">Cadastrar</button>
           <br />
           <p className="redirection">

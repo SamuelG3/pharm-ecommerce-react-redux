@@ -40,7 +40,7 @@ export const Card = () => {
             id={item.id}
             cover={item.cover}
             name={item.name}
-            price={item.price}
+            price={parseFloat(item.price.toFixed(2))}
             quantity={item.quantity}
             totalPrice={item.totalPrice}
           />
@@ -49,7 +49,7 @@ export const Card = () => {
         <div className="checkOut">
           <button>
             <span>Ir para o Checkout</span>
-            <label htmlFor="">R$ {total}</label>
+            <label htmlFor="">R$ {total.toFixed(2)}</label>
           </button>
         </div>
       </div>

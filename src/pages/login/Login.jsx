@@ -2,8 +2,16 @@ import React from "react";
 import "./login.css";
 import back from "../../assets/images/my-account.jpg";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { authActions } from "../../store/authSlice";
 
 export default function Login() {
+  const dispatch = useDispatch();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch(authActions.login());
+  };
+
   return (
     <>
       <section className="login">
@@ -17,13 +25,15 @@ export default function Login() {
           </div>
         </div>
 
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <span>Nome de Usuário ou Email*</span>
           <input type="text" required />
 
           <span>Senha</span>
-          <input type="text" required />
-          <button className="button">Login</button>
+          <input type="password" required />
+          <button className="button" type="submit">
+            Login
+          </button>
 
           <br />
 
