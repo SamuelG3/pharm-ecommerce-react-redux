@@ -5,13 +5,14 @@ import {
   AiFillLinkedin,
   AiFillTwitterCircle,
 } from "react-icons/ai";
+import "./footer.css";
 
 export default function Footer() {
   return (
     <>
-      <footer className="boxItems">
+      <footer className="footer">
         <div className="container flex">
-          <p>Pharm-Aid - Direitos Reservados</p>
+          <p>© 2023 Pharm-aid. Todos os direitos reservados</p>
           <div className="social">
             <AiFillFacebook className="icon" />
             <AiFillInstagram className="icon" />

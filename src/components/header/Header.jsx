@@ -25,7 +25,7 @@ export const Header = () => {
           </Link>
           <div className="search flex">
             <AiOutlineSearch className="searchIcon" />
-            <input type="text" placeholder="Search..." />
+            <input type="text" placeholder="Procurar..." />
           </div>
           <div className="account flexCenter">
             <Card />

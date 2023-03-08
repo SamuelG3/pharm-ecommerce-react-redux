@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
+import Newsletter from "./components/footer/Newsletter";
 import { Header } from "./components/header/Header";
 import Account from "./pages/account/Account";
 import { Home } from "./pages/home/Home";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<Account />} />
         </Routes>
+        <Newsletter />
         <Footer />
       </Router>
     </>

@@ -1,0 +1,105 @@
+.footer {
+  background-color: #454545;
+  padding: 25px 0px;
+}
+
+.footer p {
+  color: aliceblue;
+}
+
+.footer .icon {
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.newsletter {
+  margin-top: 80px;
+  padding: 50px 10px;
+  background-color: #ea5252;
+  align-items: center;
+}
+
+.newsletter .icon {
+  font-size: 40px;
+  margin-right: 20px;
+  color: aliceblue;
+}
+
+.newsletter h2 {
+  color: aliceblue;
+  width: 200px;
+}
+
+.newsletter form input {
+  margin: 0;
+}
+
+.newsletter input[type="text"] {
+  background-color: #fff;
+  border: #000000 2px solid;
+  border-radius: 5px;
+  width: 380px;
+  margin-right: 12px;
+}
+
+.newsletter .button {
+  color: #ea5252;
+  margin-left: 10px;
+  font-weight: bold;
+  background-color: aliceblue;
+  border: none;
+  border-radius: 2px;
+}
+
+.newsletter .termos {
+  justify-content: start;
+}
+
+.newsletter .termos input {
+  margin: 5px;
+}
+
+.newsletter label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-top: 0px;
+  padding: 40px;
+  background: none;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .newsletter .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .newsletter .container .flex {
+    flex-direction: column;
+  }
+
+  .newsletter .container .termos {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .newsletter .container .termos input[type="radio"] {
+    margin: 10px;
+  }
+
+  .newsletter .container input {
+    margin: 10px 0px;
+  }
+
+  .newsletter .button {
+    width: 380px;
+    margin: 10px 0;
+  }
+}
