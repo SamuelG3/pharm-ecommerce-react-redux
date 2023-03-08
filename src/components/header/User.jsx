@@ -4,6 +4,7 @@ import { BsBagCheck } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 import { GrHelp } from "react-icons/gr";
 import { BiLogOut } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 export const User = () => {
   const user = true;
@@ -41,12 +42,12 @@ export const User = () => {
                     <label htmlFor="">São Paulo, SP</label>
                   </div>
                 </div>
-
-                <button className="box">
-                  <IoSettingsOutline className="icon" />
-                  <h4>Minha Conta</h4>
-                </button>
-
+                <Link to="/account">
+                  <button className="box">
+                    <IoSettingsOutline className="icon" />
+                    <h4>Minha Conta</h4>
+                  </button>
+                </Link>
                 <button className="box">
                   <BsBagCheck className="icon" />
                   <h4>Meus Pedidos</h4>
@@ -67,7 +68,9 @@ export const User = () => {
             )}
           </>
         ) : (
-          <button>Minha Conta</button>
+          <Link to="/login">
+            <button>Minha Conta</button>
+          </Link>
         )}
       </div>
     </>
